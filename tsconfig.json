@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "outDir": "dist",
+    "rootDir": "./src",
+    "baseUrl": "./src",
+    "paths": {
+      "#*": ["./*"],
+      "#config": ["config/config.ts"],
+      "#shared/*": ["shared/*"],
+      "#utils/*": ["shared/utils/*"]
+    }
+  },
+  "include": ["src"]
+}

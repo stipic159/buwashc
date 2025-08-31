@@ -1,0 +1,33 @@
+{
+  "name": "test-bot",
+  "version": "0.1.0",
+  "description": "",
+  "main": "dist/index.js",
+  "packageManager": "yarn@4.9.2",
+  "scripts": {
+    "build": "tsc",
+    "test": "ts-node ./src/index.ts",
+    "start": "tsc && node ./dist/index.js"
+  },
+  "devDependencies": {
+    "@types/node": "^24.3.0",
+    "@types/prompt-sync": "^4.2.3",
+    "typescript": "^5.5.3"
+  },
+  "private": true,
+  "dependencies": {
+    "dotenv": "^17.2.1",
+    "i18n-js": "^4.5.1",
+    "pino": "^9.9.0",
+    "pino-pretty": "^13.1.1",
+    "prompt-sync": "^4.2.0",
+    "telegram": "^2.26.22"
+  },
+  "type": "module",
+  "imports": {
+    "#*": "./dist/*.js",
+    "#config": "./dist/config/config.js",
+    "#shared/*": "./dist/shared/*.js",
+    "#utils/*": "./dist/shared/utils/*.js"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "telegram": {
+    "config": {
+      "missingConfiguration": "Отсутствует требуемая переменная среды: {{key}}"
+    },
+    "connection": {
+      "shuttingDown": "Корректное завершение работы...",
+      "successfullyConnected": "Успешно подключено к Telegram",
+      "disconnected": "Отключено от Telegram"
+    },
+    "authentication": {
+      "passwordPrompt": "Введите пароль 2FA: ",
+      "codePrompt": "Введите код подтверждения: ",
+      "authError": "Ошибка аутентификации:",
+      "passwordEmpty": "Пароль не может быть пустым",
+      "maxPasswordAttemptsExceeded": "Превышено максимальное количество попыток ввода пароля",
+      "failedToGetValidPassword": "Не удалось получить корректный пароль",
+      "invalidPasswordRetry": "Введён неверный пароль, попробуйте ещё раз",
+      "invalidPasswordAttempt": "Неверная попытка ввода пароля {{attempt}}"
+    },
+    "client": {
+      "notInitialized": "Клиент не инициализирован. Сначала вызовите connect()"
+    },
+    "filesystem": {
+      "directoryCreationFailed": "Не удалось создать директорию: {{dirPath}}"
+    },
+    "errors": {
+      "applicationError": "Ошибка приложения:",
+      "unhandledError": "Необработанная ошибка в main:"
+    }
+  }
+}

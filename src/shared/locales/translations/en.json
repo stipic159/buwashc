@@ -1,0 +1,32 @@
+{
+  "telegram": {
+    "config": {
+      "missingConfiguration": "Missing required environment variable: {{key}}"
+    },
+    "connection": {
+      "shuttingDown": "Shutting down gracefully...",
+      "successfullyConnected": "Successfully connected to Telegram",
+      "disconnected": "Disconnected from Telegram"
+    },
+    "authentication": {
+      "passwordPrompt": "Enter 2FA password: ",
+      "codePrompt": "Enter verification code: ",
+      "authError": "Authentication error:",
+      "passwordEmpty": "Password cannot be empty",
+      "maxPasswordAttemptsExceeded": "Maximum password attempts exceeded",
+      "failedToGetValidPassword": "Failed to get valid password",
+      "invalidPasswordRetry": "Invalid password entered, please try again",
+      "invalidPasswordAttempt": "Invalid password attempt {{attempt}}"
+    },
+    "client": {
+      "notInitialized": "Client not initialized. Call connect() first"
+    },
+    "filesystem": {
+      "directoryCreationFailed": "Failed to create directory: {{dirPath}}"
+    },
+    "errors": {
+      "applicationError": "Application error:",
+      "unhandledError": "Unhandled error in main:"
+    }
+  }
+}
