@@ -77,8 +77,8 @@ if (configBase.constants.settings.cursorSymbol.length !== 1) {
 
 if (
   isNaN(configBase.constants.settings.typingSpeed) ||
-  configBase.constants.settings.typingSpeed <= 0.1 ||
-  configBase.constants.settings.typingSpeed >= 1
+  configBase.constants.settings.typingSpeed < 0.1 ||
+  configBase.constants.settings.typingSpeed > 1
 ) {
   throw new Error("Typing speed must be a valid number (from 0.1 to 1).");
 }
@@ -93,4 +93,4 @@ const paths = {
 export const config: Config = {
   ...configBase,
   paths,
-} as const;
+};
